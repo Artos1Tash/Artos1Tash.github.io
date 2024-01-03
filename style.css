@@ -1,12 +1,43 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f7f7f7; /* Light gray background color */
+    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
 }
-p{
+
+p {
     font-size: 3em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.links a {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-bottom: 10px; /* Added margin for spacing between links */
+    border-radius: 8px; /* Rounded corners for links */
+    padding: 10px; /* Padding for links */
+    background-color: #fff; /* White background for links */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+.links a:hover {
+    color: #4183c4; /* Change color on hover */
+    background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
