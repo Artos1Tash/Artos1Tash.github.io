@@ -5,15 +5,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f7f7f7; /* Light gray background color */
-    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+    background: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg') center/cover no-repeat fixed; /* Set image as background */
+    color: #fff; /* Text color */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    text-align: center;
 }
 
 p {
     font-size: 3em;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px; /* Added margin for spacing */
 }
 
@@ -21,23 +23,16 @@ p {
     display: block;
     font-size: 1.5em;
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Text color for links */
     transition: color 0.3s ease;
     margin-bottom: 10px; /* Added margin for spacing between links */
     border-radius: 8px; /* Rounded corners for links */
     padding: 10px; /* Padding for links */
-    background-color: #fff; /* White background for links */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for links */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
 }
 
 .links a:hover {
     color: #4183c4; /* Change color on hover */
-    background-color: #e0e0e0; /* Light gray background on hover */
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+    background-color: rgba(224, 224, 224, 0.7); /* Semi-transparent light gray background on hover */
 }
