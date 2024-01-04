@@ -5,13 +5,30 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg') center/cover no-repeat fixed; /* Set image as background */
+    background: url('https://wallpapers.com/images/featured/best-minimal-background-13vs03odg3mhhaia.jpg') center/cover no-repeat fixed;
     color: #fff; /* Text color */
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Prevent scrollbar flash during animation */
 }
 
 .container {
     text-align: center;
+}
+
+.animate-text, .animate-links a {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 p {
