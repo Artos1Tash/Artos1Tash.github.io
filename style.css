@@ -19,12 +19,34 @@ header {
     text-align: center;
 }
 
+@media only screen and (max-width: 749px) {
+    nav {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        color: black;    
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        position: absolute;
+        top: 60%;
+        left: auto;
+        color: black;    
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    nav {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }
 nav {
     position: absolute;
-    top: 60%;
-    right: 35%;
-    transform: translateY(-40%);
-
 }
 
 .links {
