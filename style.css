@@ -1,105 +1,124 @@
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    color: #fff;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+	color: #fff;
 }
 
 header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed;
-    border-bottom: 2px solid #ddd; 
-
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+		center/cover no-repeat fixed;
+	border-bottom: 2px solid #ddd;
 }
 
 .hero {
-    text-align: center;
+	text-align: center;
 }
 
 @media only screen and (max-width: 749px) {
-    nav {
-        position: absolute;
-        top: 60%;
-        left: 10%;
-        color: black;    
-    }
+	nav {
+		position: absolute;
+		top: 60%;
+		left: 10%;
+		color: black;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-    nav {
-        position: absolute;
-        top: 60%;
-        left: auto;
-        color: black;    
-    }
+	nav {
+		position: absolute;
+		top: 60%;
+		left: auto;
+		color: black;
+	}
 }
 
 @media only screen and (min-width: 750px) {
-    nav {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-  }
+	nav {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
 nav {
-    position: absolute;
+	position: absolute;
 }
 
 .links {
-    display: block;
-    
+	display: block;
 }
 
 .links a {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #fff; /* Text color for links */
-    transition: color 0.3s ease;
-    margin-bottom: 10px; /* Added margin for spacing between links */
-    border-radius: 8px; /* Rounded corners for links */
-    padding: 10px; /* Padding for links */
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for links */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #fff; /* Text color for links */
+	transition: color 0.3s ease;
+	margin-bottom: 10px; /* Added margin for spacing between links */
+	border-radius: 8px; /* Rounded corners for links */
+	padding: 10px; /* Padding for links */
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.7
+	); /* Semi-transparent white background for links */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .links a:hover {
-    transform: scale(1.2);
-    color: #546A7B; /* Dark gray tone */
+	transform: scale(1.2);
+	color: #546a7b; /* Dark gray tone */
 }
 
 .parallax-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 20px; /* Optional padding */
-    border-bottom: 2px solid #ddd; 
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 20px; /* Optional padding */
+	border-bottom: 2px solid #ddd;
 }
 
 .content {
-    text-align: center;
+	text-align: center;
+	
+}
+.content a {
+	transition: color 0.3s;
+	color: white;
 }
 
-.animate-text, .animate-links a {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+/* #collapsibleText{
+	display: block;
+	margin-top: 10px;
+ 	top: 70%;
+	
+} */
+.content a:hover {
+	color: black;
+}
+.animate-text,
+.animate-links a {
+	opacity: 0;
+	animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
