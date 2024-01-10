@@ -1,0 +1,157 @@
+/* Header and body */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1533271802434-53997a5f9e6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+}
+
+.header {
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+.header h1 {
+	font-family: "Helvetica", sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+    text-align: center;
+	margin: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+
+}
+
+/* Button styling */
+
+#collapsibleText {
+	display: none;
+	margin-top: 10px;
+	top: 70%;
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+
+	border: 1px solid #ddd;
+	border-radius: 4px;
+
+	padding: 10px 15px;
+
+	background-color: #f5f5f5;
+}
+
+#collapsibleText p {
+	margin: 0 0 10px;
+}
+
+.collapsible-btn {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0069d9;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.collapsible-btn:hover {
+	background-color: #00a0cc;
+}
+
+.collapsible-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(181, 217, 0, 0.5);
+}
+
+.collapsible-btn.collapsed {
+	background-color: #ddd;
+	color: #333;
+}
+
+.collapsible-btn.collapsed:hover {
+	background-color: #ccc;
+}
+
+/* Navigation styling */
+nav {
+	background-color: #eee;
+	padding: 10px;
+
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    border-radius: 4px;
+
+}
+
+nav li {
+	float: left;
+    border-radius: 4px;
+
+}
+
+nav li a {
+	color: #333;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+    border-radius: 4px;
+
+}
+
+nav li a:hover {
+	background-color: #ddd;
+    border-radius: 4px;
+
+}
+
+/* Sections */
+section {
+	padding: 20px;
+}
+
+section {
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	margin: 20px 0;
+}
+
+section:hover {
+	transform: scale(1.05);
+	transition: transform 0.5s;
+}
+
+h2 {
+	animation: slide-down 0.5s ease;
+}
+
+/* Animations */
+@keyframes slide-down {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
