@@ -20,6 +20,9 @@ header {
 }
 
 @media only screen and (max-width: 749px) {
+	#bio {
+		margin: 0px 3rem;
+	}
 	nav {
 		position: absolute;
 		top: 60%;
@@ -29,6 +32,9 @@ header {
 }
 
 @media only screen and (max-width: 500px) {
+	#bio {
+		margin: 0px 1rem;
+	}
 	nav {
 		position: absolute;
 		top: 60%;
@@ -38,6 +44,9 @@ header {
 }
 
 @media only screen and (min-width: 750px) {
+	#bio {
+		margin: 0px 8rem;
+	}
 	nav {
 		position: absolute;
 		top: 60%;
@@ -87,7 +96,10 @@ nav {
 	padding: 20px; /* Optional padding */
 	border-bottom: 2px solid #ddd;
 }
-
+#bio {
+	opacity: 0;
+	animation: fadeIn 1s ease-in-out forwards;
+}
 .content {
 	text-align: center;
 	
