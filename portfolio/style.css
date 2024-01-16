@@ -90,3 +90,54 @@ footer p {
 .work-item a:hover {
 	color: rgb(15, 16, 53);
 }
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+	.container {
+		padding: 30px;
+	}
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header h1 {
+		margin-bottom: 10px;
+	}
+
+	header nav {
+		margin-top: 20px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+	}
+
+	header nav li {
+		margin: 10px 0;
+	}
+
+	#hero {
+		padding: 60px 0;
+	}
+
+	#hero h2 {
+		font-size: 28px;
+	}
+
+	#hero p {
+		font-size: 18px;
+	}
+
+	.work-item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.work-item img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
